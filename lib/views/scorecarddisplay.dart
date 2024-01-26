@@ -15,6 +15,7 @@ class ScoreCardDisplay extends StatelessWidget{
 
   const ScoreCardDisplay({required this.scoreCard,required this.dice,required this.width,required this.range,required this.scoreCardModel,this.onClick,super.key});
 
+  
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -33,6 +34,7 @@ class ScoreCardDisplay extends StatelessWidget{
                   children: List.generate(range, (i){
                     return Row(
                       children: [
+                      
                         Text('${ScoreCategory.values[(range==7)?i+6:i].name} :'),
                       ],
                     );
